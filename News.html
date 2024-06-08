@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenderEmpowerNet - News</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #ff66a1 0%, #6f79d0 100%);
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .navbar-brand:hover {
+      color: #f8f9fa;
+    }
+
+    .navbar-nav .nav-link {
+      color: #f8f9fa;
+      font-size: 1rem;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition: width 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .nav-item.active .nav-link {
+      color: #fff;
+      font-weight: bold;
+    }
+
+
+    .header {
+      background: linear-gradient(90deg, #ff66a1 0%, #6f79d0 100%);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+
+    .news-section {
+      margin-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      color: #555;
+    }
+
+    .btn-read-more {
+      background-color: #ff66a1;
+      border: none;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    .btn-read-more:hover {
+      background-color: #0056b3;
+    }
+
+    .pagination {
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .pagination .page-link {
+      color: black;
+    }
+
+    .pagination .page-item.active .page-link {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">GenderEmpowerNet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Events.html">Events</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="News.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Videos.html">Videos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="container">
+      <h1>Latest News</h1>
+      <p>Stay updated with the latest news and articles</p>
+    </div>
+  </div>
+
+  <div class="container news-section">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="https://canadianfeedthechildren.ca/wp-content/uploads/2024/04/Blog-post-headers-2023-1200-x-600-1200-%C3%97-600-px-22.png" class="card-img-top" alt="Women's Leadership Conference">
+                <div class="card-body">
+                    <h5 class="card-title">Navigating the Path to Gender Equality: Insights from Sarah Johnson, Director of Gender and MEAL at CFTC</h5>
+                    <p class="card-text"><small class="text-muted">By Sarah Johnson | April 24, 2024</small></p>
+                    <p class="card-text">In this blog, Sarah discusses the complexities of aligning strategic plans with community-led development approaches, reflects on the state and progress of gender equality around the world, and shares insights into her career journey.</p>
+                    <a href="https://canadianfeedthechildren.ca/the-feed/csw-gender-equality/" class="btn btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="https://images.wsj.net/im-573830/?width=1280&size=1.33333333" class="card-img-top" alt="Gender Pay Gap in Tech">
+                <div class="card-body">
+                    <h5 class="card-title">International Day Against Homophobia, Biphobia and Transphobia</h5>
+                    <p class="card-text"><small class="text-muted">By John Smith | June 2, 2024</small></p>
+                    <p class="card-text">New data shows that the gender pay gap in the tech industry is slowly narrowing, thanks to increased awareness and advocacy for equal pay.</p>
+                    <a href="article2.html" class="btn btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="https://static.independent.co.uk/2024/05/31/11/newFile.jpg?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp" class="card-img-top" alt="Empowering Women in STEM">
+                <div class="card-body">
+                    <h5 class="card-title">The best LGBT-friendly holiday destinations around the world, from honeymoons to partying</h5>
+                    <p class="card-text"><small class="text-muted">By James Litston | May 31, 2024</small></p>
+                    <p class="card-text">These are some of the top places to go for a safe, welcoming and memorable break.</p>
+                    <a href="https://www.independent.co.uk/travel/inspiration/lgbt-gay-friendly-safe-travel-holidays-europe-usa-b2553971.html" class="btn btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="https://media.licdn.com/dms/image/D5612AQHN5SjvF3-QEg/article-cover_image-shrink_720_1280/0/1678188192718?e=2147483647&v=beta&t=yDGh6ecCrvekD5juKz_f0-TtbNHUJlxqKOEyuz3Yrb0" class="card-img-top" alt="Global Initiative on Child Marriage">
+                <div class="card-body">
+                    <h5 class="card-title">Breaking Barriers and Achieving Equity: Why International Women's Day Matters Now More Than Ever</h5>
+                    <p class="card-text"><small class="text-muted">By Dr. Laura Bonamici | March 7, 2023</small></p>
+                    <p class="card-text">Today, on March 8, we celebrate International Women's Day. It's a day to honor the incredible achievements of women around the world and to acknowledge the ongoing fight for gender equity. Exactly, equity, because equality is no longer enough.</p>
+                    <a href="https://www.linkedin.com/pulse/breaking-barriers-achieving-equity-why-international-womens-bonamici" class="btn btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="https://www.undp.org/sites/g/files/zskgke326/files/styles/author_detail_image/public/2022-12/StephenKinlochPichat.jpg?h=e4f638fd&itok=oSz7ZY62" class="card-img-top" alt="Gender Equality in Sports">
+                <div class="card-body">
+                    <h5 class="card-title">The role of men in achieving gender equality</h5>
+                    <p class="card-text"><small class="text-muted">By Stephen Kinloch Pichat | June 5, 2024</small></p>
+                    <p class="card-text">For gender equality to be achieved, men must also be educated on perspectives, experiences and challenges women face and then engaged as their crucial allies working hand in hand to transform the world into a place where men and women can thrive equally.
+                      Stephen Kinloch Pichat, UNDP Deputy Resident Representative in Bosnia and Herzegovina</p>
+                    <a href="https://www.undp.org/authors/stephen-kinloch-pichat" class="btn btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow">
+                <img src="https://media.npr.org/assets/img/2023/03/08/gettyimages-1247907185-98be9ee1eb1d8d651f582388d0ebba6822073594.jpg?s=700&c=85&f=webp" class="card-img-top" alt="Women Entrepreneurs">
+                <div class="card-body">
+                    <h5 class="card-title">Where there's gender equality, people tend to live longer</h5>
+                    <p class="card-text"><small class="text-muted">By Rachel Treisman | June 6, 2024</small></p>
+                    <p class="card-text">Both women and men are likely to live longer when a country makes strides towards gender equality, according to a new global study that authors believe to be the first of its kind.</p>
+                    <a href="https://www.npr.org/2023/03/08/1161902940/international-womens-day-gender-equality-life-expectancy" class="btn btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>About Us</h5>
+                <p>Learn more about our mission to promote gender equality and empower individuals.</p>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li>Email: info@genderempowernet.com</li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Address: 123 Equality St, Empower City, EC 12345</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Terms of Service</a></li>
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
